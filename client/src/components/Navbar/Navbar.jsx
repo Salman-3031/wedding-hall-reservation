@@ -28,7 +28,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <header className={`z-50 fixed top-0 left-0 w-full bg-transparent ${isScrolled && "shadow-md shadow-para/30 !bg-bakground"}`}>
+        <header className={`z-50 fixed top-0 left-0 w-full bg-transparent ${isScrolled && "shadow-md shadow-para/30 !bg-background"}`}>
             <nav className={`container flex items-center justify-between transition-all duration-500 ${isScrolled ? "py-3 md:py-4" : "py-4 md:py-6"}`}>
 
                 {/* Logo */}

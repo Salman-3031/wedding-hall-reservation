@@ -10,7 +10,7 @@ export default {
         primary: '#001427',
         secondary: '#bf0603',
         para: "#474448",
-        bakground: "#ebebd3"
+        background: "#ebebd3"
       
       },
       container: {
@@ -24,6 +24,5 @@ export default {
     },
   },
   plugins: [],
-  darkMode: "class"
 }
 

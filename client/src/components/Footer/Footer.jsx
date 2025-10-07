@@ -9,7 +9,7 @@ import { navLinks } from '../Navbar/Navbar';
 const Footer = () => {
     const navigate = useNavigate()
     return (
-        <footer className='bg-[#d7d7d7] dark:bg-slate-900'>
+        <footer className='bg-background dark:bg-slate-900'>
             <div className="container pt-10 pb-24 grid grid-cols-1 sm:grid-cols-[2fr_1fr] md:grid-cols-[2fr_1fr_1fr] gap-5">
 
                 {/* first col start */}
