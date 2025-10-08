@@ -1,54 +1,45 @@
-// import React from 'react'
-// import image1 from '../../assets/images/homeHero/heroImage1.png'
-// import image2 from '../../assets/images/homeHero/heroImage2.png'
-// import Title from '../Title/Title'
+import React from 'react'
+import { Star, Heart, Handshake, CalendarCheck } from "lucide-react";
+import Title from '../Title/Title'
 
-// const ServicesData = [
-//     {
-//         Image: image1,
-//         title: "Our services",
-//         description: "lorem akdfkll aksjdf lasl f kasf ask ldfjfsdkf  "
-//     },
-//     {
-//         Image: image2,
-//         title: "Our services",
-//         description: "lorem akdfkll aksjdf lasl f kasf ask ldfjfsdkf  "
-//     },
-//     {
-//         Image: image1,
-//         title: "Our services",
-//         description: "lorem akdfkll aksjdf lasl f kasf ask ldfjfsdkf  "
-//     },
-//     {
-//         Image: image2,
-//         title: "Our services",
-//         description: "lorem akdfkl orem akdfkll aksjdf lasl f kasf ask"
-//     },
-// ]
+const servicesData = [
+    {
+        title: "Premium Quality",
+        icon: Star,
+        description: "Experience world-class amenities and flawless arrangements designed to make your wedding truly unforgettable.",
+    },
+    {
+        title: "Trusted Service",
+        icon: Handshake,
+        description: "With years of experience and countless happy couples, we pride ourselves on reliability and excellence.",
+    },
+    {
+        title: "Personal Touch",
+        icon: Heart,
+        description: "We tailor every detail — from décor to menu — to match your unique vision and create a celebration that feels like you.",
+    },
+    {
+        title: "Easy Booking",
+        icon: CalendarCheck,
+        description: "Our seamless online booking process ensures a stress-free start to your event planning journey.",
+    },
+];
+const HomeServices = () => {
+    return (
+        <section className="pb-10">
+            <Title topheading="Why Choose Us" title="Exceptional Features for Your Special Day" description="Every detail matters when it comes to your wedding. Here's what makes us special."/>
 
-// const HomeServices = () => {
+                <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    {servicesData.map((service, index) => (
+                        <div key={index} className="bg-background rounded-2xl shadow-sm hover:shadow-lg shadow-shadow transition-all duration-300 p-5 text-center"> 
+                        <span className="flex justify-center mb-4 "><service.icon className='w-10 h-10 text-secondary'/></span>
+                            <h3 className="text-xl font-semibold text-primary mb-2"> {service.title} </h3>
+                            <p className="text-para text-sm leading-relaxed line-clamp-4"> {service.description} </p>
+                        </div>
+                    ))}
+                </div>
+        </section>
+    )
+}
 
-//     return (
-//         <div className='bg-bglight dark:bg-bgdark'>
-//             <Title title="Our Services" description="Explore our range of IT solutions and executive training programs." />
-            
-//             <div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 py-5 ">
-//                 {ServicesData.map((service, index) => (
-//                     <div key={index}
-//                         className='group p-5 space-y-2  bg-bgdark dark:bg-bglight rounded-sm relative z-10 overflow-hidden transition-all  before:duration-500 before:bg-secondary before:dark:bg-primary  before:absolute before:inset-0 before:-z-10 before:translate-y-full before:hover:translate-y-0 before:transition-all '>
-
-//                         <div className='h-52'>
-//                             <img className='w-full h-full object-cover' src={service.Image} alt="" />
-//                         </div>
-//                         <div>
-//                             <h3 className='text-xl text-white group-hover:text-black dark:text-black dark:group-hover:text-white transition-all'>{service.title}</h3>
-//                             <p className='text-lightpara group-hover:text-darkpara group-hover:dark:text-lightpara dark:text-darkpara transition-all'>{service.description}</p>
-//                         </div>
-//                     </div>
-//                 ))}
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default HomeServices
+export default HomeServices

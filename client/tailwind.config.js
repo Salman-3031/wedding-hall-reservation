@@ -10,8 +10,8 @@ export default {
         primary: '#001427',
         secondary: '#bf0603',
         para: "#474448",
-        background: "#ebebd3"
-      
+        background: "#ebebd3",
+        shadow: "#00000058"
       },
       container: {
         center: true,
