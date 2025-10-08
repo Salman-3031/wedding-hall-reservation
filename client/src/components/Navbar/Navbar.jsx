@@ -32,7 +32,8 @@ const Navbar = () => {
             <nav className={`container flex items-center justify-between transition-all duration-500 ${isScrolled ? "py-3 md:py-4" : "py-4 md:py-6"}`}>
 
                 {/* Logo */}
-                <div onClick={() => navigate('/')}>
+                <div className="flex items-center" onClick={() => navigate('/')}>
+                    <img className="w-10" src="/logo1.png" alt="logo" />
                     <h2
                         className="font-curly font-bold text-2xl text-primary cursor-pointer tracking-wide"><span>Wedding</span><span className="text-secondary">Hall</span></h2>
                 </div>

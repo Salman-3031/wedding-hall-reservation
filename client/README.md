@@ -20,4 +20,4 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 visit Website: 👇🏻
-https://techno-sphere-x.vercel.app/
+https://wedding-hall-reservation.vercel.app/
