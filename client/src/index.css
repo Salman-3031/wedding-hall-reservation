@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6{
 
 
 .common-button {
-  @apply bg-gradient-to-r from-primary to-secondary text-white hover:text-white hover:dark:text-black px-5 py-1.5 bg-red-500 rounded-sm relative z-10 overflow-hidden transition-all before:bg-black before:dark:bg-white before:absolute before:inset-0 before:-z-10 before:translate-y-full before:hover:translate-y-0 before:transition-all
+  @apply bg-gradient-to-r from-secondary to-primary text-white hover:text-white px-5 py-1.5 bg-red-500 rounded-sm relative z-10 overflow-hidden transition-all before:bg-black  before:absolute before:inset-0 before:-z-10 before:translate-y-full before:hover:translate-y-0 before:transition-all
 }
 
 

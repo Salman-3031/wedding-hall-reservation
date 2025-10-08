@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 // import AOS from "aos"
 import Footer from './components/Footer/Footer'
+import Packages from './pages/Packages'
 
 
 
@@ -30,6 +31,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/packages' element={<Packages />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
         <Footer/>

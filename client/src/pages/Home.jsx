@@ -4,10 +4,10 @@ import HomeServices from '../components/HomeComponent/HomeServices'
 
 const Home = () => {
   return (
-    <div className=''>
+    <main className=''>
         <HomeHero/>
         <HomeServices/>
-    </div>
+    </main>
   )
 }
 

@@ -75,6 +75,19 @@ const HomeHero = () => {
             >
               {activeData.description}
             </motion.p>
+
+            <motion.button 
+            initial={{opacity:0, y: 20}}
+            animate={{opacity: 1, y: 0}}
+            transition={{duration: 0.7, delay: 0.3}}
+            className="relative group overflow-hidden px-8 py-3 font-semibold text-white rounded-full bg-gradient-to-r from-secondary to-primary shadow-sm shadow-shadow transition-all duration-300 ease-out" >
+              book Now
+               {/* shimmer animation layer */}
+               <span className="absolute inset-0 bg-gradient-to-r from-transparent via-violet-50/30 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-[1200ms] ease-in-out" >
+               </span>
+            </motion.button>
+
+
           </motion.div>
         </AnimatePresence>
 
